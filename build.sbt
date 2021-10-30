@@ -105,6 +105,7 @@ lazy val zioSchema = crossProject(JSPlatform, JVMPlatform)
   .in(file("zio-schema"))
   .settings(stdSettings("zio-schema"))
   .settings(crossProjectSettings)
+  .settings(dottySettings)
   .settings(buildInfoSettings("zio.schema"))
   .settings(
     libraryDependencies ++= Seq(
